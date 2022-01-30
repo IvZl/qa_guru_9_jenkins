@@ -13,9 +13,7 @@ public class RegistrationFormTest extends TestBase {
     @Test
     void fillFormTest() {
 
-        step("Открываем страницу", () -> {
-            open("/automation-practice-form");
-        });
+        step("Открываем страницу", () -> open("/automation-practice-form"));
 
         step("Вводим имя", () -> {
             $(byId("firstName")).setValue("TestFirstName");
