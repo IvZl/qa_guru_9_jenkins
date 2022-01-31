@@ -44,8 +44,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        // String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId + ".mp4";
-        String videoUrl = "http://149.154.70.38:8080/video/" + sessionId + ".mp4";
+        String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
@@ -55,7 +54,7 @@ public class Attach {
         return null;
     }
 
-    public static String getSessionId(){
+    public static String getSessionId() {
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
 }
